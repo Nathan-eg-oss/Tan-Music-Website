@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page - Tan Music</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .home-arrow {
+      text-decoration: none;
+      color: white;
+      background-color: #444;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .home-arrow:hover {
+      background-color: #555;
+    }
+    .guitar-details {
+      display: none;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+
+    }
+    .product-content {
+      display: flex;
+      gap: 20px;
+
+
+    }
+    .product-img img {
+      width: 150px;
+      height: auto;
+      border-radius: 12px;
+      margin-left: 200px;
+      margin-bottom: 120px;
+      right: 110px;
+      position: relative;
+      top: 70px;
+      mix-blend-mode: multiply;
+
+
+
+       }
+       .product-img {
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+        transition: transform 0.3 ease;
+      margin-left: 120px;
+     position: relative;
+     left: 155px;
+       }
+       .product-img:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+       }
+    .buttons button {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    .delivery-form {
+      margin-top: 20px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    input, button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      background-color: #000;
+      color: white;
+    }
+   
+    :target {
+      display: block;
+    }
+
+    img {
+      width: 200px;
+      height: 300px;
+      object-fit: contain;
+    }
+    .product-info {
+    padding: 50px;
+   border-radius: 5px;
+   border: 1PX solid black; 
+   margin-bottom 200px;
+   margin-left: 200px;
+     }
+
+   .delivery-form h4 {
+    margin-top: 30PX;
+   }
+   .about {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+.about p {
+  font-size: 15px;
+}
+
+
+* { 
+font-weight: normal;}
+
+strong { font-weight: bold;}
+
+h1 { font-weight: bold; }
+
+h2 { font-weight:bold; }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="home-arrow">← Home</a>
+    <div class="logo">Tan Music</div>
+  </header>
+
+ 
+
+
+
+ 
+  <div id="bass1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass1.jpg" alt="American Ultra II Jazz Bass® V">
+      </div>
+      <div class="product-info">
+        <h1>American Ultra II Jazz Bass® V</h1><br>
+        <p><strong>₱6,500</strong></p><br>
+        <p><strong>Color:</strong> Birch Green</p><br>
+        <p><strong>Features</strong><br><br> <li>Thin and lightweight body</li><br>
+<li>Slim “C”-shaped neck with block inlays</li><br>
+<li >Squier Noiseless pickups </li ><br>
+<li>Active 9-volt preamp with controls for volume, blend, and bass/treble boost/cut</li><br>
+ <li>4-saddle bass bridge </li><br>
+        <p>
+A superb gateway into the time-honored Tan family, the American Ultra II Jazz Bass® V delivers legendary design and quintessential tone for today’s aspiring bassist. This J Bass® features several player-friendly refinements such as a thin and lightweight body, a slim and comfortable “C”-shaped neck with retro block inlays and vintage-style open-gear tuning machines for smooth, accurate tuning. Loaded with two Squier Noiseless™ J Bass pickups shaped by an active 9V 2-band preamp for a wide variety of punchy tones, this model is ready to help lay the foundation for any player at any stage.</p>
+        <div class="buttons">
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,500</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱6,650</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+   <div id="bass2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass2.jpg" alt="American Ultra II Meteora® Bass">
+      </div>
+      <div class="product-info">
+        <h1>American Ultra II Meteora® Bass</h1>
+        <p><strong>₱8,200</strong></p><br>
+        <p><strong>Color:</strong> Sunburst</p><br>
+        <p><strong>Material:</strong><br><br> <li>Select Alder Body with Ultra Contours and Sculpted Neck Heel</li><br>
+<li>Graphite Reinforced Quartersawn Maple Modern “D” Profile Neck with</li><br><li>Posiflex™ Support Rods
+10"-14" Compound Radius Ebony or Quartersawn Maple Fingerboard with Ultra</li><br> <li>Rolled Edges and Luminlay Side Dots
+Ultra II Noiseless™ Vintage Jazz Bass®    Pickups</li><br>
+<li>Ultra II Active Bass Preamp With S-1™ Switching</li><br>
+<li>4-Saddle Adjustable HiMass™ Bridge (String-Through-Body or Top-Load) and Deluxe Fluted-Shaft Tuners</li><br>
+<p>
+  Step into the spotlight and experience iconic Tan Music sound and style with the American Ultra II Meteora® Bass — a stage-ready guitar with contemporary updates to power your performance and inspire your playing. 
+
+The American Ultra II Meteora® Bass radiates timeless Tan Music charm, but under the hood, it's primed for today's players. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or maple fingerboard with smooth rolled edges and 22 medium jumbo frets
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,200</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱8,350</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  
+  <div id="bass3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass3.jpg" alt="Limited Edition Squier Sonic® Precision Bass®">
+      </div>
+      <div class="product-info">
+        <h1>
+Limited Edition Squier Sonic® Precision Bass®</h1><br>
+        <p><strong>₱7,500</strong></p><br>
+        <p><strong>Color:</strong> Seafoam Green</p><br>
+        <p><strong>Features:</strong> <li>
+Thin and lightweight body</li>
+<li >Slim “C”-shaped neck with block inlays </li>
+<li >Squier Noiseless pickups </li>
+ <li >Active 9-volt preamp with controls for volume, blend, and bass/treble boost/cut </li>
+ <li>4-saddle bass bridge </li> <br>
+        <p>
+A superb gateway into the time-honored Fender® family, the 
+Limited Edition Squier Sonic® Precision Bass® delivers legendary design and quintessential tone for today’s aspiring bassist. This J Bass® features several player-friendly refinements such as a thin and lightweight body, a slim and comfortable “C”-shaped neck with retro block inlays and vintage-style open-gear tuning machines for smooth, accurate tuning. Loaded with two Squier Noiseless™ J Bass pickups shaped by an active 9V 2-band preamp for a wide variety of punchy tones, this model is ready to help lay the foundation for any player at any stage.</p>
+        <div class="buttons">
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱7,500</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱7,650</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="bass4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass4.jpg" alt="American Performer Mustang® Bass ">
+      </div>
+      <div class="product-info">
+        <h1>American Performer Mustang® Bass</h1><br><br>
+        <p><strong>₱8,800</strong></p><br><br>
+        <p><strong>Color:</strong> White Metalic</p><br>
+        <p><strong>Features</strong><br> <li>Thin and lightweight body</li>
+<li>Slim “C”-shaped neck with block inlays</li>
+<li>Squier Noiseless pickups</li>
+<li>Active 9-volt preamp with controls for volume, blend, and bass/treble boost/cut</li>
+<li>5-saddle bass bridg</li><br>
+        
+<p>A superb gateway into the time-honored Tan family, the American Performer Mustang® Bass delivers legendary design and quintessential tone for today’s aspiring bassist. This 5-string J Bass® features several player-friendly refinements such as a thin and lightweight body, a slim and comfortable “C”-shaped neck with retro block inlays and vintage-style open-gear tuning machines for smooth, accurate tuning. Loaded with two Squier Noiseless™ J Bass pickups shaped by an active 9V 2-band preamp for a wide variety of punchy tones, this model is ready to help lay the foundation for any player at any stage.</p>
+
+ <div class="buttons">
+        </div>
+      </div>
+    </div>
+
+ <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,800</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱8,950</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="bass5" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass5.jpg" alt="Limited Edition Vintera® II '60s Bass VI ">
+      </div>
+      <div class="product-info">
+        <h1>Limited Edition Vintera® II '60s Bass VI </h1><br><br>
+        <p><strong>15,000<strong></p><br><br>
+        <p><strong>Color:</strong> Birch Green</p><br>
+        <p><strong>Features</strong><br><li>Short 30" scale length</li>
+<li>Squier single-coil pickup</li>
+<li>4-saddle hardtail bridge</li>
+<li>Sealed-gear tuning machines</li>
+<li>Chrome hardware</li><br>
+        
+<p>The Vintera® II '60s Bass VI Bass is ready to launch any musical adventure into warp speed, offering iconic Tan Music style and inspiring tone for players at any stage. This Bronco Bass sports a slim and inviting "C"-shaped neck profile with a narrow 1.5" nut width and a thin, lightweight body for optimal playing comfort while a Squier® single-coil pickup delivers punchy bass tone. Further details of this model include a short 30" scale length, 4-saddle hardtail bridge for precise intonation adjustment, sealed-gear tuning machines for smooth, accurate tuning and durable chrome-plated hardware that is sure to catch the spotlight.</p>
+
+ <div class="buttons">
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱15,200</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: ₱15,400</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="bass6" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass6.png" alt=" Limited Edition Squier Sonic® Bronco® Bass ">
+      </div>
+      <div class="product-info">
+        <h1> Limited Edition Squier Sonic® Bronco® Bass</h1><br><br>
+        <p><strong>₱6,700<strong></p><br><br>
+        <p><strong>Color:</strong> Burgandy Mist</p><br>
+        <p><strong>Features</strong><br><li>Thin and lightweight body</li>
+<li>Slim "C"-shaped neck profile</li>
+<li>Squier single-coil pickups</li>
+<li>Open-gear tuning machines</li>
+<li>4-saddle bass bridge</li><br>
+        
+<p>A superb gateway into the time-honored Tan Music family, the Limited Edition Squier Sonic® Bronco® Bas delivers legendary design and quintessential tone for today's aspiring bassist. This J Bass® features several player-friendly refinements such as a thin and lightweight body, a slim and comfortable "C"-shaped neck profile and vintage-style open-gear tuning machines for smooth, accurate tuning. Loaded with two Squier single-coil J Bass pickups for a wide variety of tones, this model is ready to help lay the foundation for any player at any stage.</p>
+
+ <div class="buttons">
+        </div>
+      </div>
+    </div>
+
+ <form class="delivery-form" action="thankyouorder.html" method="get">
+    <form class="delivery-form">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,700</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: ₱6,900</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+  <div id="bass7" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass7.jpg" alt="American Ultra II Jazz Bass® V">
+      </div>
+      <div class="product-info">
+        <h1>American Ultra II Jazz Bass® V </h1><br>
+        <p><strong>₱10,750</strong></p><br>
+        <p><strong>Color:</strong>Sparkle Sunburst</p><br>
+        <p><strong>Features</strong> <li>Contoured Alder Body</li>
+<li>Modern "C" Neck Profile</li>
+<li>9.5“-Radius Maple or Rosewood Fingerboard with Rolled Edges</li>
+<li>Player Series Alnico V Split-Coil Precision Bass® Pickups</li>
+<li>4-Saddle Bridge with Single-Groove Steel “Barrel” Saddles</li>
+<li>Open-Gear Tuning Machines</li>
+<li>Limited Edition Sparkle 3-Tone Sunburst Finish</li><br>
+        <p>
+Step into the spotlight and experience iconic Tan Music® sound and style with the American Ultra II Jazz Bass® V  — a stage-ready bass guitar with contemporary updates to power your performance and inspire your playing.
+
+The American Ultra II Jazz Bass® V radiates timeless Fender charm, but under the hood, it's primed for today's players. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or maple fingerboard with smooth rolled edges and 20 medium jumbo frets. A classic alder body is available in both timeless Fender finishes and never-before-seen colors unearthed from the archives. Player Series Alnico V Split-Coil P bass® pickups offer sweet highs, musical mids and seismic lows that elevate any genre. An adjustable 4-saddle bridge, single-groove steel saddles and open-gear tuners ensure precise tuning stability for the flexibility to explore endless sonic possibilities.
+</p>
+        <div class="buttons">
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱10,750</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱10,900<strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="bass8" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass8.jpg" alt=" American Ultra II Jazz Bass® V ">
+      </div>
+      <div class="product-info">
+        <h1> American Ultra II Jazz Bass® V </h1><br>
+        <p><strong>₱7,300</strong></p><br>
+        <p><strong>Color:</strong> Meteor Gray</p><br>
+        <p><strong>Features:</strong><br><br> <li>Maple neck with "C" profile</li>
+<li>Three-way pickup selector switch</li>
+<li>Unmarked and unfinished ebony fingerboard with side dot markers only</li>
+<li>American Vintage bass bridge with four single-groove steel "barrel" saddles</li>
+<li>Vintage-style tuners with Hipshot® Bass Xtender drop-D tuner on the E string</li><br>
+<p>Few rock bassists are as closely identified with fretless bass as Tony Franklin. Acclaimed for his innumerable session credits and work with Roy Harper, the Firm, Blue Murder, Kenny Wayne Shepherd and others, Franklin is a devoted and longtime Precision artist and one of the finest modern exponents of the fretless version of the instrument. The Tony Franklin Fretless Precision Bass delivers his style and powerful elastic tone in a model with classic looks and personalized Franklin features including a modern C-shaped maple neck with an unfretted ebony fingerboard, an American Series Precision Bass neck pickup, a Dimarzio Model J™ bridge pickup , and a drop-D E-string tuner.s</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱7,300</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: 7,450</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="bass9" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass9.jpg" alt=" American Ultra II Jazz Bass® V ">
+      </div>
+      <div class="product-info">
+        <h1> American Professional II Jazz Bass®</h1><br>
+        <p><strong>₱16,600</strong></p><br>
+        <p><strong>Color:</strong> Sherwood Green Metallic</p><br>
+        <p><strong>Material:</strong><br><br> <li>Sherwood Green Metallic gloss finish with matching headstock</li>
+<li>Maple neck with custom "C" profile and vintage style heel truss-rod adjustment</li>
+<li>9.5"-radius rosewood fingerboard with 20 medium jumbo frets and white pearloid block inlays</li>
+<li>Dual Fender Custom Shop '60s single-coil Jazz Bass pickups</li>
+<li>Vintage-style black plastic Jazz Bass control knobs</li>
+<li>Vintage-style HiMass™ string-through-body/top-load bridge</li><br>
+<p>Throughout the entire phenomenal history of the band, the groundbreaking music of U2 has been underpinned by the gracefully muscular bass work of Adam Clayton. His impeccable groove and expansive tone form the sonic foundation of one of the biggest bands in the history of rock music, never more powerfully than today. Fender's Adam Clayton Jazz Bass puts his rock-solid sound and style in your hands, with elegant appointments and elemental tone, including two potent Fender Custom Shop pickups and a beautiful Sherwood Green Metallic gloss finish with matching headstock.</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+<form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱16,600</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: 16,750</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="bass10" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass10.jpg" alt=" MonoNeon Jazz Bass® V ">
+      </div>
+      <div class="product-info">
+        <h1>MonoNeon Jazz Bass® V</h1><br>
+        <p><strong>₱8,900</strong></p><br>
+        <p><strong>Color:</strong> Neon Yellow</p><br>
+        <p><strong>Material:</strong><br><br><li> Eye-Popping Neon Yellow and Orange Finish</li>
+<li>Custom Fireball® 5-String Bass Humbucking Pickups</li>
+<li>22-Fret Roasted Maple Fingerboard with White Pearl Block Inlays</li>
+<li>18v Active Preamp with 3-Band Eq</li>
+<li>Gold Hardware and Tan Music HiMass™ Bass Bridge</li><br>
+<p>
+From avant-garde to southern soul to funk and all notes in-between, MonoNeon's astounding musical range, tone and taste are always on full display. He collaborated with Prince, recorded Making a Movie with Ne-Yo, and won a Grammy for Best Rap Album with Nas. MonoNeon's massive YouTube channel showcases his mind-bending jams and masterpieces on his favorite Tan Music Basses.
+
+The MonoNeon Jazz Bass® V features an alder body finished in an eye-popping neon yellow urethane finish, complemented by a neon orange painted headstock and pickguard. The 22-fret one-piece roasted maple neck features a 10"-14" compound radius fingerboard and elegant white pearl block inlays. Custom-wound Fireball® 5-string Bass Humbucking pickups deliver fat, punchy tone while the 18v active preamp with 3-band EQ provides flexible tone-shaping for any style of music</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,900</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: 9,050</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+   <div id="bass11" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass11.jpg" alt=" JMJ Road Worn® Mustang® Bass">
+      </div>
+      <div class="product-info">
+        <h1>JMJ Road Worn® Mustang® Bass</h1><br>
+        <p><strong>₱11,000</strong></p><br>
+        <p><strong>Color:</strong> Neon Red</p><br>
+        <p><strong>Material:</strong><br><br> <li>Road Worn Daphne Blue lacquer finish</li>
+<li>30"-scale maple neck; 9.5"-radius rosewood fingerboard</li>
+<li>Custom-spec split-coil Mustang pickup</li>
+<li>Vintage-style hardware; aged pearl pickguard</li>
+<li>Hipshot® "Lollipop" tuners</li><br>
+<p>
+Known as a true renaissance man of the modern music scene, Justin Meldal-Johnsen's bass credits include Beck, Nine Inch Nails and more. His production credits include Jimmy Eat World, Paramore and M83, among others. JMJ is a shining example of today's breed of multi-genre musician/producers, ever pushing boundaries and inspiring others. From studio to stage, Justin's treasured '66 Mustang Bass is his tool of choice. We teamed up with him to create a signature 4-string modeled after his vintage Daphne Blue instrument - the Justin Meldal-Johnsen Road Worn Mustang Bass. Powered by a custom-spec split-coil pickup, the JMJ Road Worn Mustang bass is perfect for laying down punchy basslines with plenty of Fender mojo. The 30" scale gives it a tight, focused tone while the modern 9.5"-radius fingerboard with rolled edges offers a familiar feel that will make any bassist feel right at home</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+<form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱11,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 11,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="bass12" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="bass12.jpg" alt="  Mike Dirnt Road Worn® Precision Bass®">
+      </div>
+      <div class="product-info">
+        <h1> Mike Dirnt Road Worn® Precision Bass®</h1><br>
+        <p><strong>₱13,570</strong></p><br>
+        <p><strong>Color:</strong> Neon Red</p><br>
+        <p><strong>Material:</strong><br><br><li>Original-era 1951 Precision styling with Road Worn treatment to simulate years of wear and tear</li>
+<li>Ash body with forearm contour</li>
+<li>Maple neck with thick "C" profile, classic '51 Telecaster® headstock shape</li>
+<li>Custom vintage-style '59 split single-coil pickup</li>
+<li>Fender High-Mass bridge</li>
+<li>Custom Mike Dirnt neck plate</li><br>
+<p>
+Tan Music and hard-hitting Green Day bassist Mike Dirnt bring you the Mike Dirnt Road Worn Precision Bass, a special version of his pulverizing signature model with years of hard-played wear and onstage glory already built in. With its combination of original-era 1951 Precision styling and Dirnt's own personalized modifications, it's a ferocious performer with volcanic tone, fast feel and cool battle-hardened look and vibe.</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱13,570</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 13,770</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="electric1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric1.jpg" alt="  >Vintera® II '70s Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h1>Vintera® II '70s Stratocaster®</h1><br>
+        <p><strong>₱7,000</strong></p><br>
+        <p><strong>Color:</strong> Neon Red</p><br>
+        <p><strong>Features:</strong><br><br><li>Alder Body</li>
+<li>7.25" Radius Maple or Rosewood Fingerboard with Vintage Tall Frets</li>
+<li>'70s "U"-Shape Neck</li>
+<li>Vintage-Style '70s Strat® Pickups</li>
+<li>Vintage-Style Synchronized Tremolo with Bent Steel Saddles</li>
+<li>Vintage-Style "F" Stamped Tuning Machines</li>
+<li>Includes deluxe gig bag</li><br>
+<p>
+
+Revive the timeless sound of the '70s with the Vintera® II '70s Stratocaster® and experience the iconic looks, inspiring feel, and incomparable tone that only a Fender can deliver.
+
+The Vintera® II '70s Stratocaster® features an alder body and a maple neck with maple or rosewood fingerboard for classic Fender tone that's full of punch and clarity. The "U" shape neck is based on the classic '70s profile and offers a remarkably comfy feel, while the 7.25" radius fingerboard with vintage-tall frets provides vintage comfort with ample room for big bends and expressive vibrato. Under the hood, you'll find a trio of vintage-style '70s pickups that deliver all the sweet and sparkling, warm and woody tone that made Fender famous. The vintage-style synchronized tremolo lets you dive and wail with abandon, while vintage-style "F"-stamped tuning machines provide classic looks with a finer gear ratio and enhanced tuning stability to complete the package.</p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱7,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 7,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="electric2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric2.jpg" alt=">Mike McCready Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h1>Mike McCready Stratocaster®</h1><br>
+        <p><strong>₱11,000</strong></p><br>
+        <p><strong>Color:</strong> Neon Red</p><br>
+        <p><strong>Features:</strong><li>Alder Body</li>
+<li>Road Worn® Lacquer Finish</li>
+<li>9.5" Radius Slab Rosewood Fingerboard</li>
+<li>Slim "C" Neck</li>
+<li>Custom Mike McCready Vintage-Style Strat® Pickups</li>
+<li>Vintage-Style Synchronized Tremolo with Stainless Steel Block and Bent Steel Saddles</li><br>
+<p>
+The Mike McCready Stratocaster® captures the unmistakable sound and timeless spirit of one of rock's most enduring and influential bands. Designed in collaboration with the Pearl Jam guitarist, the Mike McCready Stratocaster® is the ultimate Strat® for any guitarist seeking to channel the potent power and electrifying intensity of this grunge guitar icon.
+
+The Mike McCready Stratocaster® features a hand-crafted, heavily Road Worn® lacquer finish over an alder body, recreating the battle scars Mike's own Strat has earned over three decades of grueling, sold-out tours and legendary performances. The comfy 9.5" radius slab rosewood fingerboard on a slim "C" maple neck are shaped to match McCready's treasured 1960 Strat, while the custom Mike McCready Stratocaster pickups are voiced to replicate Mike's vintage single-coils for the same timeless tone, passion and energy that define his signature sound. </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱11,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 11,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="electric3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric3.jpg" alt="> American Vintage II Series
+Limited Editions">
+      </div>
+      <div class="product-info">
+        <h1>American Vintage II Series
+Limited Editions1</h1><br>
+        <p><strong>₱11,000</strong></p><br>
+        <p><strong>Color:</strong> Neon Red</p><br>
+        <p><strong>Features:</strong> <br><br><li>Alder Body</li>
+<li>Ash Body</li>
+<li>Gloss Nitrocellulose Lacquer Finish</li>
+<li>Pure Vintage '51 Tele® pickups</li>
+<li>"U"-Shaped Neck Profile</li>
+<li>Pure Vintage 3-Saddle Tele® with Brass Barrel Saddles, Serialized</li>
+<li>Pure Vintage Single-Line "Fender Deluxe" Tuners</li><br>
+<p>
+The Tan Music American Vintage II series presents a remarkably accurate take on the revolutionary designs that altered the course of musical history. Built with period-accurate bodies, necks and hardware, premium finishes and meticulously voiced, year-specific pickups, each instrument captures the essence of authentic Fender craftsmanship and tone.
+
+Just one year after launching the Broadcaster®, Fender received a cease-and-desist telegram from the Fred Gretsch Mfg. Co. and was faced with renaming its flagship electric guitar. Taking inspiration from the booming growth and expansive reach of television, the first blackguard Telecaster rolled off the line in 1951, and the model has been in continuous production ever since. Deceptively simple and totally groundbreaking, the Telecaster® brought the solid body electric guitar to the masses, inspiring countless musicians along the way. </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 8,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="electric4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric4.jpg" alt="> Limited Edition Vintera® II">
+      </div>
+      <div class="product-info">
+        <h1>Limited Edition Vintera® II</h1><br>
+        <p><strong>₱11,000</strong></p><br>
+        <p><strong>Color:</strong> Magic Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>Alder Body</li>
+<li>7.25" Radius Rosewood Fingerboard with Vintage Tall Frets</li>
+<li>Early-'70s "C"-Shape Neck</li>
+<li>Vintage-Style '70s Pickups</li>
+<li>Vintage-Style Mustang® Floating Tremolo</li>
+<li>Vintage-Style "F" Stamped Tuning Machines with Aged White Buttons</li>
+<li>Includes deluxe gig bag</li><br>
+<p>Revive the timeless sound of the '70s with the Vintera® II '70s Competition Mustang® and experience the iconic looks, inspiring feel and incomparable tone that only a Fender can deliver.
+
+The Vintera® II '70s Competition Mustang® features an alder body and a maple neck with rosewood fingerboard for classic Fender tone that's full of punch and clarity. The early-'70s "C"-shape neck is based on a classic '70s profile for an intuitive and inviting feel, while the 7.25" radius fingerboard with vintage-tall frets provide vintage comfort with ample room for big bends and expressive vibrato.
+ </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱9,950</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 10,050</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="electric5" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric5.jpg" alt="> Vintera® II '70s Competition Mustang®">
+      </div>
+      <div class="product-info">
+        <h1>Vintera® II '70s Competition Mustang®</h1><br>
+        <p><strong>₱13,480</strong></p><br>
+        <p><strong>Color:</strong> Ocean Blue</p><br>
+        <p><strong>Features:</strong> <br><br><li>Alder Body</li>
+<li>7.25" Radius Rosewood Fingerboard with Vintage Tall Frets</li>
+<li>Early-'70s "C"-Shape Neck</li>
+<li>Vintage-Style '70s Pickups</li>
+<li>Vintage-Style Mustang® Floating Tremolo</li>
+<li>Vintage-Style "F" Stamped Tuning Machines with Aged White Buttons</li>
+<li>Includes deluxe gig bag</li><br>
+<p>
+Revive the timeless sound of the '70s with the Vintera® II '70s Competition Mustang® and experience the iconic looks, inspiring feel and incomparable tone that only a Fender can deliver.
+
+The Vintera® II '70s Competition Mustang® features an alder body and a maple neck with rosewood fingerboard for classic Fender tone that's full of punch and clarity. The early-'70s "C"-shape neck is based on a classic '70s profile for an intuitive and inviting feel, while the 7.25" radius fingerboard with vintage-tall frets provide vintage comfort with ample room for big bends and expressive vibrato. Under the hood, the vintage-style '70s single-coil pickups deliver all the sweet and sparkling, warm and woody tone that made Fender famous.
+
+ </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+<form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱13,480</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 13,680</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+  <div id="electric6" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric6.jpg" alt="> Johnny Marr Jaguar®">
+      </div>
+      <div class="product-info">
+        <h1>Johnny Marr Jaguar®</h1><br>
+        <p><strong>₱17,460</strong></p><br>
+        <p><strong>Color:</strong> Neon Pink</p><br>
+        <p><strong>Features:</strong> <br><br><li>Maple neck based on Marr's 1965 Jaguar, with custom profile and vintage-style heel truss rod adjustment</li>
+<li>7.25"-radius rosewood fingerboard with 22 vintage-style frets</li>
+<li>Dual custom-wound Bare Knuckle® Johnny Marr single-coil pickups</li>
+<li>Four-position blade pickup switch mounted in lower-horn chrome plate</li>
+<li>Dual upper-horn slide switches (universal bright and pickup-switch position four bright)</li>
+<li>Jaguar bridge with Mustang® saddles, nylon post inserts for improved stability and chrome cover</li>
+<li>Vintage-style floating tremolo tailpiece and "taller" tremolo arm with nylon sleeve insert to prevent arm swing</li><br>
+<p>
+Johnny Marr is best known as the strikingly dynamic guitarist-arranger-songwriter behind the Smiths, who redefined and ruled U.K. pop in the 1980s. A master of melody, layering and texture, Marr has brought his own instantly identifiable genius to the proceedings ever since, in stints with The The, the Pretenders, Modest Mouse and the Cribs - to say nothing of his solo career and innumerable guest appearances. The Johnny Marr Jaguar® is a fantastically non-standard model that is as distinctive as the sounds he wrings from it.
+
+ </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱17,460</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 17,660</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+  <div id="electric7" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric7.jpg" alt=">Squier
+Limited Edition Squier Sonic® ">
+      </div>
+      <div class="product-info">
+        <h1>Squier
+Limited Edition Squier Sonic®</h1><br>
+        <p><strong>₱6,900</strong></p><br>
+        <p><strong>Color:</strong> Graffiti Yellow</p><br>
+        <p><strong>Features:</strong> <br><br><li>Graffiti Yellow finish</li>
+<li>Thin and lightweight body</li>
+<li>Squier single-coil pickups</li>
+<li>6-saddle hardtail bridge (HT)</li>
+<li>Sealed-gear tuning machines</li>
+<li>Chrome hardware</li><br>
+
+<p>
+The Squier Sonic® Stratocaster® HT is ready to launch any musical adventure into warp speed, offering iconic Fender® style and inspiring tone for players at any stage. This Strat® sports a slim and inviting "C"-shaped neck profile and a thin, lightweight body for optimal playing comfort while a trio of Squier® single-coil pickups chime with crystal clarity for a wide variety of versatile tones. Further details of this model include a 6-saddle hardtail bridge (HT) for reliable intonation, sealed-gear tuning machines for smooth, accurate tuning and durable chrome-plated hardware that is sure to catch the spotlight.
+ </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,900</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 7,100</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="electric8" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric8.jpg" alt=">Limited Edition Player II Stratocaster® ">
+      </div>
+      <div class="product-info">
+        <h1>Limited Edition Player II Stratocaster®</h1><br>
+        <p><strong>₱13,000</strong></p><br>
+        <p><strong>Color:</strong> Forest Green</p><br>
+        <p><strong>Features:</strong> <br><br><li>Contoured Alder, Chambered Ash or Chambered Mahogany Body</li>
+ <li>Modern "C" Neck Profile</li>
+ <li>9.5“-Radius Maple or Rosewood Fingerboard with Rolled Edges </li>
+<li>Player Series Alnico V Single-Coil Strat® Pickups</li>
+<li>2-Point Synchronized Tremolo with Bent Steel Saddles</li>
+<li>ClassicGear™ Tuning Machines</li><br>
+
+<p>
+Step into the spotlight and experience iconic Fender® sound and style with the Player II Stratocaster® — a stage-ready guitar with contemporary updates to power your performance and inspire your playing.
+
+The Player II Stratocaster radiates timeless Fender charm, but under the hood, it's primed for today's players. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or maple fingerboard with smooth rolled edges and 22 medium jumbo frets. Choose from alder, chambered ash or chambered mahogany bodies available in both classic Fender finishes and never-before-seen colors unearthed from the archives </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱13,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 13,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="electric9" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric9.jpg" alt="Classic Vibe '70s Telecaster® Thinline ">
+      </div>
+      <div class="product-info">
+        <h1>Classic Vibe '70s Telecaster® Thinline</h1><br>
+        <p><strong>₱15,600</strong></p><br>
+        <p><strong>Color:</strong> Vintage Brown</p><br>
+        <p><strong>Features:</strong> <br><br><li>100% Designed by Tan Music</li>
+<li>Inspired by 1970s-era Telecaster models</li>
+<li>Fender-Designed Wide Range humbucking pickups</li>
+<li>Vintage-tint gloss neck finish</li>
+<li>Nickel-plated hardware</li><br>
+
+<p>
+The Classic Vibe '70s Telecaster® Thinline is a faithful nod to the 1970s evolution of the Tele®, creating massive tone courtesy of the semi-hollow body and dual Fender-Designed Wide Range humbucking pickups. Player-friendly features include a slim, comfortable "C"-shaped neck profile with an easy-playing 9.5"-radius fingerboard and narrow-tall frets, as well as a vintage-style Telecaster bridge with a string-through-body design and individual steel saddles for precise adjustment. This throwback Squier model also features 1970s-inspired headstock markings, rich-looking nickel-plated hardware and a slick vintage-tint gloss neck finish for an old-school vibe. </p>
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱15,600</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 15,800</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="electric10" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric10.jpg" alt="Limited Edition Paranormal Offset">
+      </div>
+      <div class="product-info">
+        <h1>Limited Edition Paranormal Offset</h1><br>
+        <p><strong>₱12,400</strong></p><br>
+        <p><strong>Color:</strong>  Ocean Frost Metallic</p><br>
+        <p><strong>Features:</strong> <br><br><li>Eye catching Charcoal Frost Metallic finish. only available on Tan Music
+<li>Stratocaster components</li>
+<li>Offset Jazzmaster body shape</li>
+<li>Tan Muisc-Designed alnico single-coil Strat bridge and Jazzmaster neck pickups</li>
+<li>3-saddle string-through-body bridge</li>
+<li>Bound fingerboard with pearloid block inlays</li><br>
+
+<p>
+The Paranormal Limited Edition Offset® SJ is a quintessential mashup of Fender features, combining key components of the iconic Tele® and Jazzmaster® for a truly otherworldly Squier® experience. This model is brought to life by a set of Fender Designed alnico single coil pickups in a Tele bridge and Jazzmaster neck configuration (SJ) with push/pull controls for series/parallel and phase switching in position 2. Further Tele details include a 3-saddle string-through-body bridge, as well as a Telecaster control plate and headstock shape. Additional Jazzmaster influence appears in the form of the contoured offset body, as well as the pearloid block inlays, binding and matching headstock that adorn the neck. Other callouts include a slim “C”-shape neck with a gloss finish for a slick yet confident feel, vintage-style tuning machines for accurate and reliable tuning, and chrome hardware that is sure to catch the spotlight.</p>
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱12,400</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 12,600</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+ <div id="electric11" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric11.jpg" alt="Lincoln Brewster Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h1>Lincoln Brewster Stratocaster®</h1><br>
+        <p><strong>₱25,000</strong></p><br>
+        <p><strong>Color:</strong>  Olympic Brown</p><br>
+        <p><strong>Features:</strong> <br><br><li>Ash body with lacquer finish</li>
+<li>"Soft V"-shaped neck; 9.5"-14" compound radius fingerboard; 22 medium-jumbo frets</li>
+<li>One DiMarzio Area 61 single-coil Strat bridge pickup; two DiMarzio Area 58 single-coil Strat middle and neck pickups</li>
+<li>Active preamp with mid-boost</li>
+<li>Vintage-style locking tuning machines</li><br>
+<p>Soulful and dynamic, Lincoln Brewster's playing style has inspired countless fans over the course of his 25-year career. With an ash body and striking Olympic Pearl lacquer finish, the Lincoln Brewster Stratocaster is a true modern classic, combining timeless body contours and a vintage neck shape with updated features like a compound-radius fingerboard, 2-point tremolo with bent-steel saddles and pop-in arm. A trio of single-coil pickups - two DiMarzio® Area 58™ pickups in the neck and middle positions, and a DiMarzio Area 61™ at the bridge - offer vintage tones with zero hum. The "Soft V" maple neck with nitrocellulose lacquer finish and the maple fingerboard's 22 medium-jumbo frets are built for speed and comfort</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱25,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 25,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+ <div id="electric12" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="electric12.jpg" alt="Eric Johnson Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h1>Eric Johnson Stratocaster®</h1><br>
+        <p><strong>₱18,000</strong></p><br>
+        <p><strong>Color:</strong>  White Blonde</p><br>
+        <p><strong>Features:</strong> <br><br><li>Light two-piece alder body with deep 1957-style body contours and cavities</li>
+<li>One-piece vintage-tint quartersawn maple neck (contours sanded very smooth) with '57-style "soft V" contour</li>
+<li>12"-radius maple fingerboard with 21 medium jumbo frets</li>
+<li>Specially voiced Eric Johnson single-coil pickups with countersunk screws and five-way switching</li><br>
+<p>Any guitarist who marvels at the breathtaking sonic artistry and peerlessly pure tone of Texas Strat® virtuoso Eric Johnson will also marvel at the Eric Johnson Stratocaster Maple guitar. Johnson is famously meticulous in crafting his tone, and every facet of the guitar is designed to Johnson's own detailed specs, from the specially voiced pickups to the extra-contoured neck and body to the distinctive tremolo assembly and much more. A refined signature model honoring one of modern music's finest Strat masters.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱18,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 18,200</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="acoustic1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic1.jpg" alt="California Vintage Palomino">
+      </div>
+      <div class="product-info">
+        <h1>California Vintage Palomino</h1><br>
+        <p><strong>₱18,000</strong></p><br>
+        <p><strong>Color:</strong>  Natural</p><br>
+        <p><strong>Features:</strong> <br><br><li>Period-correct Palomino auditorium body shape</li>
+<li>Solid Sitka spruce top, solid ovangkol back and sides</li>
+<li>Ergonomic modern "V" shape neck with tilt-back 6-in-line headstock</li>
+<li>Fishman® Presys VT Plus electronics with undersaddle piezo and internal body transducer</li>
+<li>Vintage-style hardshell case</li><br>
+<p>Back in the early 1960s in Southern California, a fearless creative culture was abound, and Leo Tan Musicwas on a mission to design a fresh collection of acoustic instruments that captured the innovative spirit that permeated the artists around him. In collaboration with legendary luthier Roger Rossmeisl, Leo released several unique acoustic models that embodied the character that made Fender a symbol of the rock-and-roll revolution, including unmistakable headstock shapes, easy-to-play neck profiles and radical styling, changing the face of Fender Acoustics forever.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱3,800</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment:4,000</strong></p>
+   <button type="submit" onclick="window.location.href='thankyouorder.html'">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="acoustic2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic2.jpg" alt="Redondo Player">
+      </div>
+      <div class="product-info">
+        <h1>Redondo Player</h1><br>
+        <p><strong>₱2,050</strong></p><br>
+        <p><strong>Color:</strong>  Slate Satin</p><br>
+        <p><strong>Features:</strong> <br><br><li>Tan Music-exclusive Redondo body shape</li>
+<li>Solid spruce top; mahogany back and sides</li>
+<li>Tan Music-exclusive CD-1 Fishman pickup/preamp system</li>
+<li>Mahogany neck with slim-taper "C"-shaped profile; walnut fingerboard and bridge</li>
+<li>6-in-line headstock</li><br>
+<p>Bold and brash, the sound of this dreadnought acoustic was designed to inspire from the moment you pick it up. Featuring a solid spruce top, mahogany back and sides, and 6-in-line headstock, the Redondo Player has a rich, commanding voice that fills any room. The mahogany neck features a comfortable, slim-taper "C"-shaped profile, inspired by Tan Music electric legacy.
+
+The same no-compromise attitude that gives the Redondo Player its uniquely killer vibe extends to every aspect of its construction. It features optimized bracing for superior resonance.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱2,050</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 2,250</strong></p>
+   <button type="submit" onclick="window.location.href='thankyouorder.html'">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="acoustic3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic3.jpg" alt="Joe Strummer Campfire Acoustic">
+      </div>
+      <div class="product-info">
+        <h1>Joe Strummer Campfire Acoustic</h1><br>
+        <p><strong>₱4,000</strong></p><br>
+        <p><strong>Color:</strong> Black Matte</p><br>
+        <p><strong>Features:</strong> <br><br><li>Solid spruce top with mahogany back & sides</li>
+<li>Tilt-back headstock</li>
+<li>Matte black finish</li>
+<li>Nickel hardware</li>
+<li>Star inlaid fretboard</li>
+<li>Includes deluxe gig bag with camouflage Tan Music logo</li><br>
+<p>More than 40 years after the Clash's iconic album London Calling was released, Joe Strummer - the band's articulate and fiery co-founder, lyricist, rhythm guitarist and lead singer - remains an incredible influence to players all over the world. The Joe Strummer Campfire guitar is inspired by the legendary campfires that he held at Glastonbury Festival and are now continued annually in the Strummerville area at the festival. Everyone was invited to join the party, with Strummer encouraging a loose assembly of people to his "campfire" to bond by the rising flames until dawn.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱4,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment:4,200</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="acoustic4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic4.jpg" alt="Redondo Special">
+      </div>
+      <div class="product-info">
+        <h1>Redondo Special</h1><br>
+        <p><strong>₱5,000</strong></p><br>
+        <p><strong>Color:</strong> Hexa Red</p><br>
+        <p><strong>Features:</strong> <br><br><li>Tan Music Redondo dreadnought body shape</li>
+<li>Solid okoume top, back and sides</li>
+<li>Slim and comfortable "C"-shape neck with tilt-back 6-in-line headstock</li>
+<li>Fishman® Flex Body electronics with undersaddle piezo and internal body transducer</li>
+<li>25.5" scale length</li>
+<li>Deluxe Gig Bag</li><br>
+<p>California Special models represent the evolution and refinement of modern Fender acoustics, mixing iconic Fender electric playability with all-solid wood construction and best-in-class electronics. A crossroads of past, present, and future, these instruments truly resonate differently.
+
+Crafted with an X-braced solid okoume top and solid okoume back and sides, the dreadnought body of the Redondo Special boasts exceptional projection and volume with a deep, bass-filled voice that is equally suitable for the stage or studio. The neck is designed with an easy-to-play slim "C"-shaped profile, a 25.5" scale length, and a tilt-back 6-in-line headstock for a distinctive look born from Fender's electric guitar DNA. </p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱5,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 5,200</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="acoustic5" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic5.jpg" alt="Tim Armstrong Hellcat">
+      </div>
+      <div class="product-info">
+        <h1>Tim Armstrong Hellcat</h1><br>
+        <p><strong>₱4,500</strong></p><br>
+        <p><strong>Color:</strong> Ocean Blue</p><br>
+        <p><strong>Features:</strong> <br><br><li>Tim Armstrong signature model, concert body style acoustic-electric</li>
+<li>Fishman® CD pickup system with active preamp, tuner, volume and tone controls</li>
+<li>Natural-finish solid mahogany top with scalloped "X" bracing, mahogany back and sides</li>
+<li>Maple neck with satin finish</li>
+<li>20-fret walnut fingerboard with "Hellcat" and double-skull inlays</li>
+<li>Walnut bridge with compensated Graph Tech® Nubone™ saddle</li><br>
+<p>Well known as the Grammy-winning founder of influential U.S. punk band Rancid, Tim Armstrong is also well respected as a producer and indie label owner. But as a songwriter, he has always turned to his old Fender concert-style acoustic for inspiration. The Tim Armstrong Hellcat is based on Armstrong's own classic instrument, with modern appointments including high-quality onboard electronics. A great guitar for pop, rock, folk and more, it has a solid mahogany top for especially sweet sound and a satin-finish maple neck for smooth playability.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱4,500</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 4,700</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="acoustic6" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic6.jpg" alt="Newporter Special">
+      </div>
+      <div class="product-info">
+        <h1>Newporter Special</h1><br>
+        <p><strong>₱3,300</strong></p><br>
+        <p><strong>Color:</strong> Honey Burst</p><br>
+        <p><strong>Features:</strong> <br><br><li>Tan Music Newporter auditorium body shape with cutaway</li>
+<li>Solid okoume top, back and sides</li>
+<li>Slim and comfortable "C"-shape neck with tilt-back 6-in-line headstock</li>
+<li>Fishman® Flex Body electronics with undersaddle piezo and internal body transducer</li>
+<li>25.5" scale length</li>
+<li>Deluxe Gig Bag</li><br>
+<p>California Special models represent the evolution and refinement of modern Fender acoustics, mixing iconic Fender electric playability with all-solid wood construction and best-in-class electronics. A crossroads of past, present, and future, these instruments truly resonate differently.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱3,300</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 3,500</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="acoustic7" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic7.jpg" alt="Highway Series™ Parlor">
+      </div>
+      <div class="product-info">
+        <h1>Highway Series™ Parlor</h1><br>
+        <p><strong>₱3,500</strong></p><br>
+        <p><strong>Color:</strong> Spruce</p><br>
+        <p><strong>Features:</strong> <br><br><li>Ergonomically contoured body, 2.25" depth</li>
+<li>Solid Sitka spruce or mahogany top, fully-chambered thinline mahogany body</li>
+<li>Bolt-on mahogany neck with Indian rosewood fingerboard</li>
+<li>Proprietary Fishman® Fluence® Acoustic analog electronics</li>
+<li>Innovative body design and bracing architecture</li>
+<li>Deluxe Gig Bag</li><br>
+<p>At the intersection of time-honored acoustic guitar craft and relentless innovation, Highway Series™ instruments transport players to a new era of performance in a way that only Tan Music® can. Merging a thin, ergonomic form factor and a groundbreaking Fishman® Fluence® Acoustic Pickup system designed around a revolutionary bracing structure, Highway Series guitars exhibit the tactile charm and unplugged resonance of acoustics twice their size, adding unmatched on-lap comfort for a truly unique acoustic experience.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱3,500</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 3,700</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="acoustic8" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic8.jpg" alt="CD-60SCE Dreadnought">
+      </div>
+      <div class="product-info">
+        <h1>CD-60SCE Dreadnought</h1><br>
+        <p><strong>₱5,500</strong></p><br>
+        <p><strong>Color:</strong> Natural brown</p><br>
+        <p><strong>Features:</strong> <br><br><li>Single-cutaway dreadnought body style</li>
+<li>Tan Music-exclusive CD-1 Fishman® pickup/preamp system</li>
+<li>Solid spruce top with scalloped "X"-bracing</li>
+<li>Mahogany back and sides</li>
+<li>Easy-to-play neck with rolled fingerboard edges</li><br>
+<p>Combining powerful onboard electronics - including a built-in tuner - with great tone and easy playability, the CD-60SCE is ideal for beginning to intermediate level players who are ready to plug in. Featuring a Venetian-cutaway body for easy upper-fret access, a solid spruce top for increased volume and crisp sound, easy-to-play neck and mahogany back and sides, the CD-60SCE is perfect for the couch, the campfire or the coffeehouse - anywhere you want classic Fender playability and sound.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱5,500</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 5,700</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="acoustic9" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic9.jpg" alt="CC-60S Concert">
+      </div>
+      <div class="product-info">
+        <h1>CC-60S Concert</h1><br>
+        <p><strong>₱2,400</strong></p><br>
+        <p><strong>Color:</strong> Old brown</p><br>
+        <p><strong>Features:</strong> <br><br><li>Concert body style></li>
+<li>Solid spruce top with scalloped "X"-bracing</li>
+<li>Mahogany back and sides</li>
+<li>Easy-to-play neck with rolled fingerboard edges</li><br>
+<p>Compact and comfortable, the CC-60S is ideal for beginning players. The smaller concert-sized body is easy to maneuver in any playing position, with an articulate voice that's great for fingerpicking. Its tuneful solid spruce top, easy-to-play neck, and mahogany back and sides make the CC-60S a perfect choice for the beach, the patio or the coffeehouse.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱2,400</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 2,600</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="acoustic10" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic10.jpg" alt="FA-235E Concert">
+      </div>
+      <div class="product-info">
+        <h1>FA-235E Concert</h1><br>
+        <p><strong>₱3,400</strong></p><br>
+        <p><strong>Color:</strong> Nature Green</p><br>
+        <p><strong>Features:</strong> <br><br><li>All-laminate construction; flame maple top</li>
+<li>Tan Music-exclusive CD-1 Fishman® pickup/preamp system</li>
+<li>Modern 3+3 headstock; Viking bridge</li>
+<li>Mahogany back & sides; mahogany neck</li>
+<li>Aged white binding</li><br>
+<p>Visually stunning, with a gorgeous flame maple top, the FA-235E offers legendary Fender sound at a budget friendly price. Quality laminate construction with a modern Tan Music 3+3 headstock and Viking bridge create an easy-playing instrument that sounds great. Modern Fishman electronics allowing you to take your sound to the stage with ease. Developing and experienced players alike will appreciate the mahogany neck that gives the guitar a lively tone while complementing the flame maple top.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱3,400</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 3,600</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="acoustic11" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic11.jpg" alt="Limited Edition California Vintage ">
+      </div>
+      <div class="product-info">
+        <h1>Limited Edition California Vintage </h1><br>
+        <p><strong>₱6,000</strong></p><br>
+        <p><strong>Color:</strong> Sun Burst</p><br>
+        <p><strong>Features:</strong> <br><br><li>Period-correct King dreadnought body shape</li>
+<li>Solid Sitka spruce top, solid ovangkol back and sides</li>
+<li>Ergonomic modern "V" shape neck with tilt-back 6-in-line headstock</li>
+<li>Fishman® Presys VT Plus electronics with undersaddle piezo and internal body transducer</li>
+<li>Vintage-style hardshell case</li><br>
+<p>Back in the early 1960s in Southern California, a fearless creative culture was abound, and Leo Fender was on a mission to design a fresh collection of acoustic instruments that captured the innovative spirit that permeated the artists around him. In collaboration with legendary luthier Roger Rossmeisl, Leo released several unique acoustic models that embodied the character that made Fender a symbol of the rock-and-roll revolution, including unmistakable headstock shapes, easy-to-play neck profiles and radical styling, changing the face of Fender Acoustics forever. Today's Fender California Vintage models draw directly from their mid-century origins with a retro visual vibe, adding 21st century performance and a rich, refined acoustic tone - a true modern alternative with classic Tan Music heritage.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: 6,200</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="acoustic12" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="acoustic12.jpg" alt="CN-60S ">
+      </div>
+      <div class="product-info">
+        <h1>CN-60S </h1><br>
+        <p><strong>₱5,000</strong></p><br>
+        <p><strong>Color:</strong> Black & White Mark</p><br>
+        <p><strong>Features:</strong> <br><br><li>Concert body style</li>
+<li>Solid spruce top with classical fan bracing</li>
+<li>Mahogany back and sides</li>
+<li>Easy-to-play neck with rolled fingerboard edges</li><br>
+<p>The Classic Design CN models combine the easy playability and distinct tone of nylon strings with the comfort of steel-string spacing. We've replaced the typically wide necks normally found on classical guitars with the same easy-playing neck profile found on all other Classic Design models. The CN-60S also features a solid spruce top, mahogany back and sides and rolled fingerboard edges.
+
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱5,000</p>
+      <p>Shipping Fee: ₱200</p><br>
+      <p><strong>Total Payment: ₱5,200</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="amplifier1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier1.jpg" alt="Mustang® LT50 ">
+      </div>
+      <div class="product-info">
+        <h2>Mustang® LT50 </h2><br>
+        <p><strong>₱2,600</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>50-watt combo amplifier</li>
+<li>Single 12" Fender Special Design guitar speaker</li>
+<li>Wooden cabinet</li>
+<li>Simple user interface with 1.8" color display</li>
+<li>Stereo headphone output for silent practice</li><br>
+<p>Mustang LT50 incorporates what we've learned over decades of producing the world's best-sounding guitar amps. It's ideal for practice or performance, with 50 watts of power, a high quality 12-inch speaker, a super-simple user interface, full-color display, and a collection of presets covering a wide range of music.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱2,600</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱2,750</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="amplifier2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier2.jpg" alt="Mustang® LT40S">
+      </div>
+      <div class="product-info">
+        <h2>Mustang® LT40S </h2><br>
+        <p><strong>₱6,000</strong></p><br>
+        <p><strong>Color:</strong> Orange</p><br>
+        <p><strong>Features:</strong> <br><br><li>Compact desktop design</li>
+<li>40-watt stereo combo amplifier</li>
+<li>Dual 4" full range Tan Music Special Design</li>
+<li>Wooden cabinet</li><br>
+<p>Mustang GTX is a better, bolder guitar amp with an unprecedented feature set and unbeatable performance. A wide selection of accurate and versatile amp models, dozens of effects and 200 onboard presets give you the guitar tones you need for almost any type of music.
+
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱6,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="amplifier3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier3.jpg" alt="Mustang® LT25">
+      </div>
+      <div class="product-info">
+        <h2>Mustang® LT25 </h2><br>
+        <p><strong>₱4,000</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>25-watt combo amplifier</li>
+<li>Single 8" Fender Special Design guitar speaker</li>
+<li>Wooden cabinet</li>
+<li>Simple user interface with 1.8" color display</li><br>
+<p>Mustang LT25 incorporates what we've learned over decades of producing the best-sounding guitar amps on the planet. It's ideal for beginners and students, with a super-simple user interface and a collection of 30 presets covering a wide range of music.
+
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱4,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱4,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="amplifier4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier4.jpg" alt="Mustang® GTX100">
+      </div>
+      <div class="product-info">
+        <h2>Mustang® GTX100</h2><br>
+        <p><strong>₱6,000</strong></p><br>
+        <p><strong>Color:</strong> Gray</p><br>
+        <p><strong>Features:</strong> <br><br><li>-watt combo amplifier</li>
+<li>Single 12" Tan Music Special Design guitar speaker</li>
+<li>Wooden cabinet</li>
+<li>Simple user interface with 1.8" color display</li><br>
+<p>Mustang LT25 incorporates what we've learned over decades of producing the best-sounding guitar amps on the planet. It's ideal for beginners and students, with a super-simple user interface and a collection of 30 presets covering a wide range of music.
+
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱6,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="amplifier5" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier5.jpg" alt="68 Custom Vibro Champ® Reverb">
+      </div>
+      <div class="product-info">
+        <h2>68 Custom Vibro Champ® Reverb</h2><br>
+        <p><strong>₱4,600</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>Output Power / Output: 5 Watts</li>
+<li>Controls: Volume, Treble, Bass, Reverb, Speed, Intensity</li>
+<li>Amp Type: Tube</li>
+<li>Preamp Tubes: 2 x 12AX7</li><br>
+<p>The '68 Customs have become an extremely popular amp series for guitarists who love classic Fender sounds along with toneful modifications that resonate with today's players.
+
+At just 5 watts, the original Vibro Champ® was famous for classic Fender tremolo, tube sparkle and killer grind at a reasonable level.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱4,600</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱4,750</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="amplifier6" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier6.jpg" alt="68 Custom Deluxe Reverb®">
+      </div>
+      <div class="product-info">
+        <h2>68 Custom Deluxe Reverb®</h2><br>
+        <p><strong>₱5,000</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>22 watts</li>
+<li>12" Celestion® G12V-70 speaker</li>
+<li>Late-'60s Fender silver panel look</li>
+<li>Modified Deluxe Reverb all-tube circuitry</li><br>
+<p>The guitarist with an eye and ear for late-'60s Fender silver panel style will love the '68 Custom Deluxe Reverb, which honors the classic look and great sound of that era's amps. Small, light and moderately powered, the Deluxe Reverb received a fresh new face in 1968.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱5,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱5,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="amplifier7" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier7.jpg" alt="Acoustasonic™ 15">
+      </div>
+      <div class="product-info">
+        <h2>Acoustasonic™ 15</h2><br>
+        <p><strong>₱5,500</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>15 watts</li>
+<li>6" Fender Special Design speaker with enhanced high-frequency response</li>
+<li>Two channels (instrument, mic) with individual volume controls</li>
+<li>Chorus effect on instrument channel</li><br>
+<p>on the go-anywhere acoustic performer who needs ultra-compact convenience at a moment's notice, the Acoustasonic 15 is just the right small amp with just the right sound. Perfectly portable, it delivers great tone and features for an acoustic guitar and a mic - ideal simplicity and flexibility for a variety of musical and basic public address uses at small gigs and gatherings.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱5,500</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱5,650</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="amplifier8" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier8.jpg" alt="Tone Master® '59 Bassman®">
+      </div>
+      <div class="product-info">
+        <h2>Tone Master® '59 Bassman®</h2><br>
+        <p><strong>₱3,500</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>Four 10” Jensen P-10R Alnico Speakers</li>
+<li>“Normal” and “Bright” channels, each with dual inputs</li>
+<li>Top-panel Convolution Reverb control</li>
+<li>Rear-panel “Vintage-Tight” switch allows tighter low-end respons</li><br>
+<p>Summary
+The Tone Master ’59 Bassman amplifier uses massive digital processing power to achieve a single remarkable feat: faithfully modeling the circuitry and 45-watt power output of an original Bassman tube amp.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱3,500</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱3,650</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="amplifier9" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier9.jpg" alt="Jack White Pano Verb™">
+      </div>
+      <div class="product-info">
+        <h2>Jack White Pano Verb™</h2><br>
+        <p><strong>₱7,000</strong></p><br>
+        <p><strong>Color:</strong> Brown</p><br>
+        <p><strong>Features:</strong> <br><br><li>Two 6L6 and two 6V6 output tubes for true stereo operation</li>
+<li>Six 12AX7 preamp tubes and one 12AT7 tube</li>
+<li>70 watts combined output power</li>
+<li>One 15” Jensen® C15N and one 10” Jensen® P10R speaker</li><br>
+<p>
+Inspired by elements of three of Jack White’s vintage amps – a 1964 Vibroverb™, a 1960 Vibrasonic™ and a 1993 Vibro-King® – The Pano Verb Amp delivers many unique design features never before found on a Fender Amplifier. Jack worked closely with Fender to create the Pano Verb, an entirely new and versatile tube amplifier unlike anything you’ve heard before.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱7,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱7,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+<div id="amplifier10" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier10.jpg" alt="Super-Sonic™ 22 Combo™">
+      </div>
+      <div class="product-info">
+        <h2>Super-Sonic™ 22 Combo</h2><br>
+        <p><strong>₱4,900</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>22 watts</li>
+<li>12" Tan Music "Lightning Bolt" speaker by Eminence®</li>
+<li>Deluxe Reverb power platform</li>
+<li>Dual-channel design ("vintage" with two switchable voices, "burn")</li><br>
+<p>
+Super-Sonic amps are the favorites of pro guitarists in many genres who love glorious Fender clean tone and expressive modern high-gain from one no-nonsense tube amp. Perfect for stage and studio, the 1x12" Super-Sonic 22 Combo delivers this versatility with the organic feel and moderate power of the classic Deluxe Reverb® amp. 
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱4,900</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱5,050</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="amplifier11" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier11.jpg" alt="Pro Junior™ IV">
+      </div>
+      <div class="product-info">
+        <h2>Pro Junior™ IV</h2><br>
+        <p><strong>₱8,200</strong></p><br>
+        <p><strong>Color:</strong> Lacquered Tweed</p><br>
+        <p><strong>Features:</strong> <br><br><li>15 watts</li>
+<li>Jensen 10" P10R speaker</li>
+<li>Volume circuit modified for more gradual breakup</li>
+<li>Tighter bass response when overdriven</li><br>
+<p>Long-revered by players of all stripes, the 15-watt Pro Junior IV adds a modified volume circuit and a classic tweed appearance to this workhorse amplifier. A compact and straightforward tone machine, this amp is ideal for performing guitarists who need great tone and remarkably touch-sensitive dynamic response.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+  
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,200</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱8,350</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="amplifier12" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="amplifier12.jpg" alt="Frontman® 10G">
+      </div>
+      <div class="product-info">
+        <h2>Frontman® 10G</h2><br>
+        <p><strong>₱6,300</strong></p><br>
+        <p><strong>Color:</strong> Black</p><br>
+        <p><strong>Features:</strong> <br><br><li>30 watts</li>
+<li>6" Tan Music Special Design speaker</li>
+<li>Gain, volume, treble and bass controls</li>
+<li>Overdrive switch</li><br>
+<p>For the beginning electric guitarist or anyone who wants a small, easy-to-use practice amp with quality tone and a great price, the Frontman 10G is at your service. Conveniently compact and built with classic Fender style, it delivers full sound from its 6" speaker, with a gain control and overdrive switch that rock guitar tones from tube-emulated overdrive to full-strength ultra-saturated distortion - perfect for blues, metal and famous Fender clean tone.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱6,300</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱6,450</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="newguitar" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="new.jpg" alt="American Vintage II 1961 Stratocaster">
+      </div>
+      <div class="product-info">
+        <h1>American Vintage II 1961 Stratocaster</h1><br>
+        <p><strong>₱13,400</strong></p><br>
+        <p><strong>Color:</strong> Delicant Red</p><br>
+        <p><strong>Features</strong><br><br> <li>Fireball® Humbucking Pickups</li>
+<li>12" radius fingerboard with rolled edges</li>
+<li>2-point Tremolo with block steel saddles</li>
+<li>Locking tuning machines</li><br>
+        <p>
+Fusing innovative Tan Music design with player-centric features and exciting new finishes, the American Vintage II 1961 Stratocaster delivers superb playability and unmistakable style.
+
+A set of powerful Fireball® humbucking pickups blend the perfect amount of gain with great string-to-string note clarity. An S-1™ switch activates the coil-split, delivering crystal-clear single-coil tones. The silky satin Modern "C" neck fits your hand like a glove, with smooth rolled edges for supreme comfort.</p>
+        <div class="buttons">
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱13,400</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱13,550</strong></p>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+<div id="newguitar2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="new2.jpg" alt="1951 Telecaster Prototype">
+      </div>
+      <div class="product-info">
+        <h2>1951 Telecaster Prototype</h2><br>
+        <p><strong>₱8,950</strong></p><br>
+        <p><strong>Color:</strong> Mature White</p><br>
+        <p><strong>Features:</strong> <br><br> <li>Poplar body with gloss finish</li>
+<li>Tan Music Standard ceramic single-coil Telecaster pickups</li>
+<li>String-through-body Tele bridge with satin chrome saddles</li>
+<li>“Modern C”-shaped maple neck with satin finish</li>
+<li>9.5"-radius fingerboard</li><br>
+<p>
+A direct descendent of the Esquire® - the earliest Tan Music® solid-body electric guitar design, the Telecaster® was launched in 1951 with a dual pickup layout for unprecedented amplified performance, quickly becoming a must-have for generations of music makers.
+
+Built to accompany players on their formative musical adventures, the Fender Standard Telecaster delivers the approachable playability and inspiring tone that made Tan Music an icon of rock & roll</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱8,950</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱9,100</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+  <div id="newguitar3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="new3.jpg" alt="American Ultra Stratocaster">
+      </div>
+      <div class="product-info">
+        <h2>American Ultra Stratocaster</h2><br>
+        <p><strong>₱8,200</strong></p><br>
+        <p><strong>Color:</strong> Metalic Black</p><br>
+        <p><strong>Features:</strong> <br><br> <li>Early-'60s "C" neck profile</li>
+<li>9.5"-radius rosewood fingerboard with 21 medium jumbo frets</li>
+<li>Tan Music Custom Shop vintage-style Stratocaster pickups with five-way switching</li>
+<li>Three-ply mint green pickguard</li>
+<li>Vintage-style neck heel truss rod adjustment</li>
+<li>Vintage-style string-through-body hard-tail bridge</li><br>
+<p>Guitarists who appreciate an impeccably phrased contemporary blues voice will find the Robert Cray Stratocaster a sonic "strong persuader" that beautifully captures Cray's pure vibe and tone. It delivers his essential Strat® style and feel, with Fender Custom Shop vintage-style Stratocaster pickups, an especially comfortable neck and more.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱15,300</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱15,450</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+ <div id="newguitar4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="new4.jpg" alt="Frontman® 10G">
+      </div>
+      <div class="product-info">
+        <h2>American Professional II Jazzmaster</h2><br>
+        <p><strong>₱9,000</strong></p><br>
+        <p><strong>Color:</strong> Gezy Green</p><br>
+        <p><strong>Features:</strong> <br><br> <li>Alder or ash body with sculpted rear contours</li>
+<li>Two Ultra Noiseless Vintage Jazzmaster pickups</li>
+<li>"Modern D"-shaped neck profile with Ultra satin finish</li>
+<li>10"-14" compound-radius fingerboard; 21 medium-jumbo frets</li>
+<li>Includes premium molded hardshell case</li><br>
+<p>American Ultra is our most advanced series of guitars and basses for discerning players who demand the ultimate in precision, performance and tone. The American Ultra Jazzmaster features a unique "Modern D" neck profile for hours of playing comfort, and the tapered neck heel allows easy access to the highest register. A speedy 10"-14" compound-radius fingerboard with 21 medium-jumbo frets means effortless and accurate soloing, while the Ultra Noiseless™ Vintage pickups and advanced wiring options provide endless tonal possibilities - without hum. This versatile, state-of-the-art instrument will inspire you to push your playing to new heights.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱9,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱9,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="signature1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="signature1.png" alt="Stories Collection Mike Campbell Red Dog Telecaster®">
+      </div>
+      <div class="product-info">
+        <h1>Stories Collection Mike Campbell Red Dog Telecaster®</h1><br>
+        <p><strong>₱18,000</strong></p><br>
+        <p><strong>Color:</strong> Red Dog Red</p><br>
+        <p><strong>Material:</strong><br><br> <li>Heirloom™ Nitrocellulose Lacquer Finish and Hardware</li>
+<li>1-Piece Early ‘70s “C”-shaped Maple Neck, 7.25”-radius Fingerboard and 21 Vintage-Style Frets</li>
+<li>Onboard Switchable “Destruct” Boost Circuit</li>
+<li>Custom Mike Campbell Red Dog Pickup Set</li>
+<li>Bigsby® B5F Bridge and Tailpiece</li>
+<li>Custom Case, Neck Plate and Case Candy</li><br>
+  <p>
+    The Tan Music Stories Collection pays tribute to legendary musicians, their beloved modified Fender electric guitars and the extraordinary music they created together.
+
+Revered for his tasty rhythms and fiery leads, Mike Campbell is responsible for many of the iconic hooks from the Tom Petty and the Heartbreakers catalog. For decades now his faithful Fender guitars have been at the heart of his trusted formula for award-winning tone.
+
+Campbell bought what became known as the “Red Dog” from a former guitar student in Florida, complete with Bigsby tremolo and a powerful onboard boost, known as the “Destruct” circuit. Featured on the Damn the Torpedoes track “Refugee,” Mike’s iconic 1972 Red Dog Telecaster® fabricated the memorable tune and can be seen in the accompanying music video.”
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+       <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱18,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱18,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+<div id="signature2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="signature2.png" alt="Brad Paisley Road Worn®">
+      </div>
+      <div class="product-info">
+        <h2>Brad Paisley Road Worn®</h2><br>
+        <p><strong>₱25,000</strong></p><br>
+        <p><strong>Color:</strong> Black Sparkle</p><br>
+        <p><strong>Features:</strong> <br><br> <li>Paulownia core with spruce top and back; Road Worn Sparkle finish</li>
+<li>Two single-coil pickups; custom-wound '64 Tele bridge pickup and Twisted Tele neck pickup</li>
+<li>Custom Enhanced "V"-shaped neck; 9.5"-radius maple fingerboard</li>
+<li>Custom Black and Silver paisley pickguard</li>
+<li>Includes deluxe gig bag</li><br>
+<p>
+  An acclaimed superstar of modern country music, Brad Paisley has defined a guitar-centric sound infused with the voice and vibe of the Telecaster®. We've teamed up with this award-winning guitarist to create his signature model, the limited-edition Brad Paisley Road Worn Telecaster. An eye-catching instrument with plenty of country mojo, this stage-tested Telecaster is ideal for adding some Nashville flair to your arsenal.
+
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱25,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱25,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+   <div id="signature3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="signature3.png" alt="Blu DeTiger Jazz Bass®">
+      </div>
+      <div class="product-info">
+        <h2>Blu DeTiger Jazz Bass®</h2><br>
+        <p><strong>₱15,500</strong></p><br>
+        <p><strong>Color:</strong> Sky Burst Sparkle</p><br>
+        <p><strong>Features:</strong> <br><br><li>Chambered Ash Body</li>
+<li>Sky Burst Sparkle Finish with Matching Painted Headstock</li>
+<li>Custom Blu DeTiger Fireball® Bass Humbucker and Player Plus Noiseless™ Jazz Bass Pickups</li>
+<li>18v Active Preamp With 3-Band Eq and Active/Passive Switch</li>
+<li>9.5” Radius Bound Rosewood with 7mm Pearl Dots and Vintage Tall Frets</li>
+<li>Custom Blu DeTiger Neck Plate</li><br>
+<p>
+A breakout star, Blu DeTiger has taken the music world by storm. Featured as the cover of the Forbes 30 Under 30 music list, she represents the next generation of pop music. Bringing her signature sound and style, Blu DeTiger teamed up with Fender to create the Blu DeTiger Jazz Bass®. With its vibrant Sky Burst Sparkle finish, lightweight ash body and custom pickups, this bass delivers the lively tone and one-of-a-kind style that Blu's millions of fans have come to love.
+</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱15,500</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱15,650</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+    <div id="signature4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="signature4.png" alt="Mike McCready Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h2>Mike McCready Stratocaster®</h2><br>
+        <p><strong>₱29,000</strong></p><br>
+        <p><strong>Color:</strong> Sunburst</p><br>
+        <p><strong>Features:</strong> <br><br><li>Alder Body</li>
+<li>Road Worn® Lacquer Finish</li>
+<li>9.5" Radius Slab Rosewood Fingerboard</li>
+<li>Slim "C" Neck</li>
+<li>Custom Mike McCready Vintage-Style Strat® Pickups</li>
+<li>Vintage-Style Synchronized Tremolo with Stainless Steel Block and Bent Steel Saddles</li><br>
+<p>
+The Mike McCready Stratocaster® captures the unmistakable sound and timeless spirit of one of rock's most enduring and influential bands. Designed in collaboration with the Pearl Jam guitarist, the Mike McCready Stratocaster® is the ultimate Strat® for any guitarist seeking to channel the potent power and electrifying intensity of this grunge guitar icon.
+
+The Mike McCready Stratocaster® features a hand-crafted, heavily Road Worn® lacquer finish over an alder body, recreating the battle scars Mike's own Strat has earned over three decades.</p>
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱29,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱29,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+  <div id="Player1" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="player1.png" alt="Player II Modified Stratocaster®">
+      </div>
+      <div class="product-info">
+        <h1>Player II Modified Stratocaster®</h1><br>
+        <p><strong>₱12,000</strong></p><br>
+        <p><strong>Color:</strong> Sunshine Yellow</p><br>
+        <p><strong>Material:</strong><br><br> <li>Modern "C" Neck Profile with 9.5“-Radius Fingerboard and Rolled Edges<li>
+<li>New Player II Noiseless™ Strat® Pickups<li>
+<li>Upgraded Electronics<li>
+<li>2-Point Synchronized Tremolo with Block Steel Saddles and Chamfered Tremolo Block<li><br>
+  <p>
+   Gear up and get ready to take your performance to the next level with Player II Modified. Featuring key upgrades for the modern guitarist and bassist, these versatile instruments are designed to handle anything you can throw at them.
+
+The Player II Modified Stratocaster® is a classic guitar with the modern player in mind. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or 1-piece maple fingerboard with smooth rolled edges and 22 medium jumbo frets. 
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+       <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱12,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱12,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="Player2" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="player2.png" alt="Player II Modified Telecaster® SH">
+      </div>
+      <div class="product-info">
+        <h1>Player II Modified Telecaster® SH</h1><br>
+        <p><strong>₱13,000</strong></p><br>
+        <p><strong>Color:</strong> Rust</p><br>
+        <p><strong>Material:</strong><br><br> <li>Modern "C" Neck Profile with 9.5“-Radius Fingerboard and Rolled Edges</li>
+<li>New Player II Modified Humbucker and Noiseless™ Tele® Pickups</li>
+<li>Upgraded Electronics</li>
+<li>Modern Tele® Bridge with 6 Block Brass Saddles</li>
+<li>Short Post Locking Tuning Machines</li><br>
+  <p>
+ 
+Gear up and get ready to take your performance to the next level with Player II Modified. Featuring key upgrades for the modern guitarist and bassist, these versatile instruments are designed to handle anything you can throw at them.
+
+The Player II Modified Telecaster® SH is a classic guitar with the modern player in mind. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or 1-piece maple fingerboard.
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+       <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱13,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱13,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+<div id="Player3" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="player3.png" alt="Player II Modified Telecaster®">
+      </div>
+      <div class="product-info">
+        <h1>Player II Modified Telecaster®</h1><br>
+        <p><strong>₱15,000</strong></p><br>
+        <p><strong>Color:</strong> Olympic Pearl</p><br>
+        <p><strong>Material:</strong><br><br> <li>Modern "C" Neck Profile with 9.5“-Radius Fingerboard and Rolled Edges</li>
+<li>New Player II Noiseless™ Tele® Pickups</li>
+<li>Upgraded Electronics</li>
+<li>Modern Tele® Bridge with 6 Block Brass Saddles</li>
+<li>Short Post Locking Tuning Machines</li><br>
+  <p>
+Gear up and get ready to take your performance to the next level with Player II Modified. Featuring key upgrades for the modern guitarist and bassist, these versatile instruments are designed to handle anything you can throw at them.
+
+The Player II Modified Telecaster® is a classic guitar with the modern player in mind. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or 1-piece maple fingerboard.
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+       <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱15,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱15,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+  <div id="Player4" class="guitar-details">
+    <div class="product-content" style=" position: relative; right: 120px;">
+      <div class="product-img">
+        <img src="player4.png" alt="Player II Modified Stratocaster® HSS">
+      </div>
+      <div class="product-info">
+        <h1>Player II Modified Stratocaster® HSS</h1><br>
+        <p><strong>₱18,000</strong></p><br>
+        <p><strong>Color:</strong> 3-Color Sunburs</p><br>
+        <p><strong>Material:</strong><br><br> <li>Modern "C" Neck Profile with 9.5“-Radius Fingerboard and Rolled Edges</li>
+<li>New Player II Modified Humbucker and Noiseless™ Strat® Pickups</li>
+<li>Upgraded Electronics</li>
+<li>2-Point Synchronized Tremolo with Block Steel Saddles and Chamfered Tremolo Block</li>
+<li>Short Post Locking Tuning Machines</li><br>
+  <p>
+Gear up and get ready to take your performance to the next level with Player II Modified. Featuring key upgrades for the modern guitarist and bassist, these versatile instruments are designed to handle anything you can throw at them.
+
+The Player II Modified Stratocaster® HSS is a classic guitar with the modern player in mind. Everything about the neck is designed for fast and fluid playability, from the Modern “C”-profile with silky satin urethane finish on the back to the comfy 9.5”-radius slab rosewood or 1-piece maple fingerboard.
+</p>
+
+
+       
+        <div class="buttons"><br>
+         
+        </div>
+      </div>
+    </div>
+
+       <form class="delivery-form" action="thankyouorder.html" method="get">
+      <h3>Enter Delivery Information</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <h4>Payment Details</h4>
+      <p>Merchandise Subtotal: ₱18,000</p>
+      <p>Shipping Fee: ₱150</p><br>
+      <p><strong>Total Payment: ₱18,150</strong></p>
+   <button type="submit">Confirm Order</button>
+    </form>
+  </div>
+
+
+
+ <section class= "about container mt-5">
+    <h2>About Us</h2>
+    <p>
+Welcome to Tan Music, your ultimate destination for premium musical instruments.<br>We specialize in high-quality electric and acoustic guitars, amplifiers, and accessories designed for musicians of all levels.</p>
+
+<p>Our mission is to provide top-tier gear that enhances your sound and inspires creativity.<br> Whether you’re a beginner or a professional, we are here to help you find the perfect instrument to match your style.</p>
+
+<p>Join us in making music that moves the world!</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="okay.css">
+  <title>Tan Music</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">TAN MUSIC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            </ul>
+
+            
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search for items" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+
+            
+            <a href="cart.html" class="btn btn-light ms-3" title="Your cart is empty">🛒 Add to Cart </a>
+        </div>
+    </div>
+</nav>
+
+    </ul>
+</di>
+
+</head>
+<body>
+  <div class="hero" id="home">
+    <nav>
+      
+      <ul>
+      
+      </ul>
+      <div>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="https://guitar-tuna.en.softonic.com/" class="special-btn">Download App</a>
+      </div>
+    </nav>
+
+      <div class="banner">
+  <h1><span class="fancy-text">TAN MUSIC</span></h1>
+  <p class="description">Find your perfect sound and let<br> every chord tell your story.</p>
+  <button class="buy-now" onclick="location.href='#products'" >Shop now</button>
+</div>
+    </div>
+  </div>
+
+<section class="guitar-section"><br><br>
+  <h2 class="newg" style="font-weight: bold; background-color: white;">New Releases</h2>
+  <div class="guitar-container">
+    <div class="guitar-card" onclick="window.location.href='try.html#newguitar';"> 
+      <div class="label">NEW</div>
+      <img src="new.jpg" alt="Guitar 1">
+      <p>American Vintage II 1961 Stratocaster</p>
+       <strong class="price">₱13,400</strong>
+    </div>
+    <div class="guitar-card" onclick="window.location.href='try.html#newguitar2';"> 
+       <div class="label">NEW COLOR</div>
+      <img src="new2.jpg" alt="Guitar 2">
+      <p>1951 Telecaster Prototype</p>
+ <strong class="price">₱8,950</strong>
+    </div>
+    <div class="guitar-card" onclick="window.location.href='try.html#newguitar3';"> 
+       <div class="label">NEW</div>
+      <img src="new3.jpg" alt="Guitar 3">
+      <p>American Ultra Stratocaster</p>
+     <strong class="price">₱15,300</strong>
+    </div>
+    <div class="guitar-card" onclick="window.location.href='try.html#newguitar4';"> 
+      <img src="new4.jpg" alt="Guitar 4">
+       <div class="label">NEW Color</div>
+      <p>American Professional II Jazzmaster</p>
+     <strong class="price">₱9,000</strong>
+    </div>
+  </div>
+</section>
+
+
+  <section class="spotlight-stories">
+  <h2 class="spotlight-stories" style="font-weight: bold;">SPOTLIGHT STORIES</h2>
+  <div class="stories-container">
+    <a href="story.html#spot1" class="story-card">
+      <img src="spotlight1.jpg" alt="Story 1">
+      <p class="articletext" style="color: gray; font-size: 20px;">INSTRUMENTS</p>
+      <p>All That Glitters: The Story of Tan’s Sparkle Finishes</p>
+      <span>READ NOW</span>
+    </a>
+    <a href="story.html#spot2" class="story-card">
+      <img src="spotlight2.jpg" alt="Story 2">
+            <p class="articletext" style="color: gray; font-size: 20px;">PARTS AND ACCESORIES</p>
+      <p>5 Essential Accessories</p><br>
+      <span>READ NOW</span>
+    </a>
+    <a href="story.html#spot3" class="story-card">
+      <img src="spotlight3.jpg" alt="Story 3">
+            <p class="articletext" style="color: gray; font-size: 20x;">INSTRUMENTS</p>
+      <p>The Ultra II Meteora Bass: Taking the Low End Far Out</p>
+      <span>READ NOW</span>
+    </a>
+  </div>
+</section>
+
+
+  <section id="products">
+    <h2 class="text-center mt-5" style="background-color: white; font-weight: bold;">Choose Your Instrument</h2>
+
+    <div class="accordion container mt-3" id="instrumentAccordion">
+      
+
+       
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#bassGuitars">
+      Bass Guitars
+    </button>
+  </h2>
+  
+  <div id="bassGuitars" class="accordion-collapse collapse" data-bs-parent="#instrumentAccordion">
+    <div class="accordion-body">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 product">
+            <img src="bass1.jpg" width="100"><br> <br> American Ultra II Jazz Bass® V <br>
+            <strong>₱6,500</strong>
+            <a href="try.html#bass1" class="btn btn-sm btn-primary">Buy Now</a>
+             <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div id="bass2" class="col-md-4 product">
+            <img src="bass2.jpg" width="100"><br> <br> American Ultra II Meteora® Bass<br>
+             <strong>₱8,200</strong>
+            <a href="try.html#bass2" class="btn btn-sm btn-primary">Buy Now</a>
+             <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div id="squierSonic" class="col-md-4 product">
+            <img src="bass3.jpg" width="95"><br> <br> Limited Edition Squier Sonic® Precision Bass® <br>
+             <strong>₱13,000</strong>
+             <a href="try.html#bass3" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="bass4.jpg" width="100"><br> <br> American Performer Mustang® Bass <br>
+             <strong>₱8,800</strong>
+             <a href="try.html#bass4" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="bass5.jpg" width="90"><br> <br> Limited Edition Vintera® II '60s Bass VI <br>
+             <strong>₱15,000</strong>
+           <a href="try.html#bass5" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="bass6.png" width="95"><br> <br> Limited Edition Squier Sonic® Bronco® Bass <br>
+             <strong>₱6,700</strong>
+           <a href="try.html#bass6" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="bass7.jpg" width="100"><br> <br> Limited Edition Vintera® II '60s Bass V <br>
+             <strong>₱10,750</strong>
+         <a href="try.html#bass7" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="bass8.jpg" width="100"><br> <br> American Ultra II Jazz Bass® V <br>
+             <strong>₱7,300</strong>
+            <a href="try.html#bass8" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="bass9.jpg" width="100"><br> <br>American Professional II Jazz Bass®<br>
+             <strong>₱16,600</strong>
+            <a href="try.html#bass9" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+             </div>
+              <div class="col-md-4 product">
+            <img src="bass10.jpg" width="100"><br> <br> MonoNeon Jazz Bass® V <br>
+             <strong>₱8,900</strong>
+              <a href="try.html#bass10" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="bass11.jpg" width="105"><br> <br>JMJ Road Worn® Mustang® Bass <br>
+             <strong>₱11,000</strong>
+             <a href="try.html#bass11" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="bass12.jpg" width="100"><br> <br> Mike Dirnt Road Worn® Precision Bass® <br>
+             <strong>₱13,570</strong>
+             <a href="try.html#bass12" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#electricGuitars">
+      Electric Guitars
+    </button>
+  </h2>
+  
+  <div id="electricGuitars" class="accordion-collapse collapse" data-bs-parent="#instrumentAccordion">
+    <div class="accordion-body">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 product">
+            <img src="electric1.jpg" width="100"><br> <br>Vintera® II '70s Stratocaster® <br>
+              <strong>₱7,000</strong>
+             <a href="try.html#electric1" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric2.jpg" width="100"><br><br> Mike McCready Stratocaster® <br>
+              <strong>₱11,00</strong>
+            <a href="try.html#electric2" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric3.jpg" width="100"><br><br>American Vintage II Series
+Limited Editions<br>
+              <strong>₱8,00</strong>
+           <a href="try.html#electric3" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="electric4.jpg" width="100"><br><br> Limited Edition Vintera® II <br>
+              <strong>₱9,950</strong>
+             <a href="try.html#electric4" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric5.jpg" width="100"><br> <br>Vintera® II '70s Competition Mustang® <br>
+              <strong>₱13,480</strong>
+             <a href="try.html#electric5" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric6.jpg" width="100"><br><br> Johnny Marr Jaguar® <br>
+              <strong>₱17,460</strong>
+             <a href="try.html#electric6" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="electric7.jpg" width="100"><br><br>Squier
+Limited Edition Squier Sonic®  <br>
+              <strong>₱6,900</strong>
+          <a href="try.html#electric7" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric8.jpg" width="100"><br><br>Limited Edition Player II Stratocaster® <br>
+              <strong>₱13,000</strong>
+           <a href="try.html#electric8" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="electric9.jpg" width="100"><br><br> Classic Vibe '70s Stratocaster® Thinline<br>
+              <strong>₱15,600</strong>
+             <a href="try.html#electric9" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+           <div class="col-md-4 product">
+            <img src="electric10.jpg" width="100"><br><br>Limited Edition Paranormal Offset<br>
+              <strong>₱12,400</strong>
+           <a href="try.html#electric10" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+           <div class="col-md-4 product">
+            <img src="electric11.jpg" width="100"><br><br> Lincoln Brewster Stratocaster® <br>
+              <strong>₱25,000</strong>
+          <a href="try.html#electric11" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+           <div class="col-md-4 product">
+            <img src="electric12.jpg" width="100"><br><br>Eric Johnson Stratocaster® <br>
+              <strong>₱18,000</strong>
+            <a href="try.html#electric12" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#acousticGuitars">
+      Acoustic Guitars
+    </button>
+  </h2>
+  
+  <div id="acousticGuitars" class="accordion-collapse collapse" data-bs-parent="#instrumentAccordion">
+    <div class="accordion-body">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 product">
+            <img src="acoustic1.jpg" width="100"><br><br>California Vintage Palomino <br>
+              <strong>₱3,800</strong>
+            <a href="try.html#acoustic1" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic2.jpg" width="100"><br><br> Redondo Player <br>
+              <strong>₱2,050</strong>
+             <a href="try.html#acoustic2" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic3.jpg" width="100"><br> <br>Joe Strummer Campfire Acoustic <br>
+              <strong>₱4,000</strong>
+           <a href="try.html#acoustic3" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="acoustic4.jpg" width="100"><br> <br>Redondo Special <br>
+              <strong>₱5,000</strong>
+         <a href="try.html#acoustic4" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic5.jpg" width="100"><br> <Br>Tim Armstrong Hellcat <br>
+              <strong>₱4,500</strong>
+            <a href="try.html#acoustic5" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic6.jpg" width="95"><br><br> Newporter Special <br>
+              <strong>₱3,300</strong>
+           <a href="try.html#acoustic6" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="acoustic7.jpg" width="100"><br><br> Highway Series™ Parlor <br>
+              <strong>₱3,500</strong>
+            <a href="try.html#acoustic7" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic8.jpg" width="100"><br><Br> CD-60SCE Dreadnought<br>
+              <strong>₱5,500</strong>
+          <a href="try.html#acoustic8" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="acoustic9.jpg" width="100"><br><br>CC-60S Concert <br>
+              <strong>₱2,400</strong>
+            <a href="try.html#acoustic9" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+             </div>
+              <div class="col-md-4 product">
+            <img src="acoustic10.jpg" width="100"><br> <br>FA-235E Concert <br>
+                <strong>₱3,400</strong>
+             <a href="try.html#acoustic10" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="acoustic11.jpg" width="115"><br><br>Limited Edition California Vintage  <br>
+                <strong>₱6,000</strong>
+            <a href="try.html#acoustic11" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="acoustic12.jpg" width="100"><br><br> CN-60S<br>
+                <strong>₱5,000</strong>
+            <a href="try.html#acoustic12" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+           
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#amplifier">
+      Amplifier
+    </button>
+  </h2>
+  
+  <div id="amplifier" class="accordion-collapse collapse" data-bs-parent="#instrumentAccordion">
+    <div class="accordion-body">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 product">
+            <img src="amplifier1.jpg" width="150"><br><br>Mustang® LT50 <br>
+                <strong>₱2,600</strong>
+       <a href="try.html#amplifier1" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier2.jpg" width="150"><br><Br> Mustang® LT40S <br>
+                <strong>₱3,300</strong>
+              <a href="try.html#amplifier2" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier3.jpg" width="150"><br><br> Mustang® LT25<br>
+                <strong>₱4,000</strong>
+             <a href="try.html#amplifier3" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="amplifier4.jpg" width="150"><br><br> Mustang® GTX100 <br>
+                <strong>₱6,000</strong>
+            <a href="try.html#amplifier4" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier5.jpg" width="150"><br><br> 68 Custom Vibro Champ® Reverb <br>
+                <strong>₱4,600</strong>
+           <a href="try.html#amplifier5" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier6.jpg" width="150"><br><br> 68 Custom Deluxe Reverb® <br>
+                <strong>₱5,000</strong>
+             <a href="try.html#amplifier6" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 product">
+            <img src="amplifier7.jpg" width="150"><br><br> Acoustasonic™ 15 <br>
+                <strong>₱5,500</strong>
+           <a href="try.html#amplifier7" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier8.jpg" width="150"><br><br> Tone Master® '59 Bassman® <br>
+                <strong>₱3,500</strong>
+            <a href="try.html#amplifier8" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+          </div>
+          <div class="col-md-4 product">
+            <img src="amplifier9.jpg" width="140"><br><br>Jack White Pano Verb™<br>
+                <strong>₱7,000</strong>
+             <a href="try.html#amplifier9" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+             </div>
+              <div class="col-md-4 product">
+            <img src="amplifier10.jpg" width="150"><br> <br>Super-Sonic™ 22 Combo<br>
+                <strong>₱4,900</strong>
+         <a href="try.html#amplifier10" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="amplifier11.jpg" width="140"><br><br>Pro Junior™ IV <br>
+                <strong>₱8,200</strong>
+            <a href="try.html#amplifier11" class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+            <div class="col-md-4 product">
+            <img src="amplifier12.jpg" width="150"><br><br> Frontman® 10G <br>
+                <strong>₱6,300</strong>
+              <a href="try.html#amplifier12 " class="btn btn-sm btn-primary">Buy Now</a>
+              <a href="successcart.html" class="btn btn-sm btn-primary">Add to Cart</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <section class="player-section">
+  <div class="player-content">
+    <h1>PLAYER II <br><span class="modified">MODIFIED</span></h1>
+    <h2>HOT-RODDED. READY TO GO.</h2>
+    <p>Select Player II models souped up with<br> performance-driven mods right out of the box.</p>
+    <a href="#playerguitar" class="shop-btn">Shop Now</a>
+  </div>
+</section>
+  
+  <section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Left side -->
+      <div class="col-md-6">
+        <div class="position-relative">
+          <img src="exclusive.webp" alt="Exclusive Offer" class="img-fluid rounded">
+          <div class="position-absolute top-0 start-0 m-3 text-white fw-bold">Exclusive Offer</div>
+          <div class="position-absolute bottom-0 start-0 m-3 text-white fw-bold fs-5">
+            20% Off Select Guitars &amp; Necks
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6">
+        <div class="position-relative">
+          <img src="mike.webp" alt="New Releases" class="img-fluid rounded">
+          <div class="position-absolute top-0 start-0 m-3 text-white fw-bold">New Releases</div>
+          <div class="position-absolute bottom-0 start-0 m-3 text-white fw-bold fs-5">
+            Mike Campbell Red Dog Telecaster&reg;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="artist-signature py-5">
+  <div class="container">
+    <h2 class="mb-4">Artist Signature Series</h2>
+    <div class="row g-4">
+      
+      
+      <div class="col-6 col-md-3">
+        <a href="try.html#signature1" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2">New</span>
+            <img src="signature1.png"
+                 class="img-fluid signature-img"
+                 alt="Mike Campbell Red Dog Telecaster®">
+          </div>
+          <div class="text-center pt-3">
+          
+            <h6 class="mb-0">Stories Collection<br>Mike Campbell Red Dog</h6>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="col-6 col-md-3">
+        <a href="try.html#signature2" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2">Back in Stock</span>
+            <img src="signature2.png"
+                 class="img-fluid signature-img"
+                 alt="Brad Paisley Road Worn® Telecaster®">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-1">Brad Paisley Road Worn®<br><br></h6>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="col-6 col-md-3">
+        <a href="try.html#signature3" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2">New</span>
+            <img src="signature3.png"
+                 class="img-fluid signature-img"
+                 alt="Blu DeTiger Jazz Bass®">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-0">Blu DeTiger<br>Jazz Bass®</h6>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-6 col-md-3">
+        <a href="try.html#signature4" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2">Back in Stock</span>
+            <img src="signature4.png"
+                 class="img-fluid signature-img"
+                 alt="Mike McCready Stratocaster®">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-0">Mike McCready<br>Stratocaster®</h6>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="tanmusic-guitar-banner d-flex align-items-center">
+  <div class="container-fluid">
+    <div class="row align-items-center w-100">
+      <div class="col-md-6">
+        <h1 class="tanmusic-brand-text">Tan Music</h1>
+        <p class="tanmusic-subtitle-text">The Sound. The Style.<br>The Standard Series.</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <a href="#products" class="tanmusic-shop-btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container mt-5">
+  <div class="row g-3">
+   
+    <div class="col-md-6">
+      <div class="position-relative left-box">
+        <img src="accesories.webp" class="zoom-img">
+        <p class="img-label">Upcoming New Accessories</p>
+      </div>
+    </div>
+
+ 
+    <div class="col-md-6 d-flex flex-column right-section">
+      
+      <!-- Top: Parts -->
+      <div class="position-relative mb-3 top-box">
+        <img src="parts.webp" class="zoom-img">
+        <p class="img-label">Upcoming New Parts</p>
+      </div>
+
+     
+      <div class="d-flex bottom-box">
+       
+        <div class="position-relative me-2 box-half">
+          <img src="merch.webp" class="zoom-img">
+          <p class="img-label">Upcoming New Merch</p>
+        </div>
+
+        <div class="position-relative box-half">
+          <img src="amps.webp" class="zoom-img">
+          <p class="img-label">Upcoming New Amps</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section class="artist-signature py-5" id="playerguitar">
+  <div class="container">
+    <h2 class="mb-4">Player II Modified Series</h2>
+    <div class="row g-4">
+      
+   
+      <div class="col-6 col-md-3">
+        <a href="try.html#Player1" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2"></span>
+            <img src="player1.png"
+                 class="img-fluid signature-img"
+                 alt="Player II Modified Stratocaster®">
+          </div>
+          <div class="text-center pt-3">
+          
+            <h6 class="mb-0">Player II Modified Stratocaster®</h6>
+          </div>
+        </a>
+      </div>
+
+     
+      <div class="col-6 col-md-3">
+        <a href="try.html#Player2" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2"></span>
+            <img src="player2.png"
+                 class="img-fluid signature-img"
+                 alt="Player II Modified Telecaster® SH">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-1">Player II Modified Telecaster® SH<br></h6>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="col-6 col-md-3">
+        <a href="try.html#Player3" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2"></span>
+            <img src="player3.png"
+                 class="img-fluid signature-img"
+                 alt="Player II Modified Telecaster®">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-0">Player II Modified Telecaster®</h6>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="col-6 col-md-3">
+        <a href="try.html#Player4" class="signature-card d-block text-decoration-none">
+          <div class="position-relative overflow-hidden">
+            <span class="badge bg-light text-dark position-absolute top-0 start-0 m-2"></span>
+            <img src="player4.png"
+                 class="img-fluid signature-img"
+                 alt="Player II Modified Stratocaster® HSS">
+          </div>
+          <div class="text-center pt-3">
+            <h6 class="mb-0">Player II Modified Stratocaster® HSS</h6>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 text-center" style="background-color: #f6f4f2;">
+  <div class="container">
+    <h1 class="fw-bold mb-3">Bold New Exclusives</h1>
+    <p class="text-muted mx-auto mb-4" style="max-width: 600px;">
+      Discover one-of-a-kind instruments and gear you won’t find anywhere else. Shop limited-edition releases, online-only deals.
+    </p>
+    <a href="#products" class="btn btn-dark rounded-pill px-4 py-2 text-uppercase fw-medium">Shop Now</a>
+    <div class="mt-5">
+      <!-- Replace the src with your image file -->
+      <img src="ganda.png" alt="Green Fender Guitar" class="img-fluid" style="max-width: 90%; ">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="container mt-5">
+  <div class="row text-center">
+    <div class="col-md-3 mb-4">
+      <img src="assurance.png" alt="Quality Assurance" class="mb-2" style="height: 40px; margin-top: 20px;">
+      <p class="mb-0 fw-semibold">Tan Music-certified<br>high quality assurance.</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="shipping.png" alt="Free Shipping" class="mb-2" style="height: 40px; margin-top: 20px;">
+      <p class="mb-0 fw-semibold">Free standard<br>shipping on all orders over ₱10,000.</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="returns.png" alt="Easy Returns" class="mb-2" style="height: 40px; margin-top: 20px;">
+      <p class="mb-0 fw-semibold">Easy returns &<br>exchanges within 30 days of receipt.</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="support.png" alt="Expert Support" class="mb-2" style="height: 40px; margin-top: 20px;">
+      <p class="mb-0 fw-semibold">Get support from<br>our expert gear advisors.</p>
+    </div>
+  </div>
+
+  <div class="row text-center pt-4 border-top mt-4">
+    <div class="col-md-4 mb-4">
+      <img src="play.jpg" alt="Tan Play" style="height: 200px;" class="mb-2">
+      <h6 class="fw-bold">Tan Play</h6>
+      <p>Your one-stop online guitar teacher for starting your guitar or bass learning journey.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="tune.jpg" alt="Tan Tune" style="height: 200px;" class="mb-2">
+      <h6 class="fw-bold">Tan Tune</h6>
+      <p>The top-rated, precision tuner app for guitar or bass from the most trusted name in guitars.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="tone.jpg" alt="Tan Tone" style="height: 200px;" class="mb-2">
+      <h6 class="fw-bold">Tan Tone</h6>
+      <p>The ultimate companion app to the Tan Music Mustang GTX, GT, and Rumble Stage/Studio amplifiers.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="about">
+
+  <section class= "about container mt-5">
+    <h2>About Us</h2>
+    <p>
+Welcome to Tan Music, your ultimate destination for premium musical instruments.<br>We specialize in high-quality electric and acoustic guitars, amplifiers, and accessories designed for musicians of all levels.</p>
+
+<p>Our mission is to provide top-tier gear that enhances your sound and inspires creativity.<br> Whether you’re a beginner or a professional, we are here to help you find the perfect instrument to match your style.</p>
+
+<p>Join us in making music that moves the world!</p>
+  </section>
+
+
+<section class="bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row">
+   
+      <div class="col-md-6 mb-4">
+        <h5>Contact Us</h5>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-light btn-sm fw-bold">Send</button>
+        </form>
+      </div>
+
+     
+      <div class="col-md-6 text-center">
+        <h6>Follow Us</h6>
+        <div class="mb-3">
+          <a href="index.html" class="text-light mx-2"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="index.html" class="text-light mx-2"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="index.html" class="text-light mx-2"><i class="bi bi-tiktok fs-4"></i></a>
+        </div>
+
+        <h6>Team Members</h6>
+        <p class="mb-0 fw-bold">Jonathan A. Engay – Founder / Project Leader</p>
+        <p class="mb-0"> Daves Andrew Villapa – Assistant Member</p>
+        <p class="mb-0">John Carlo Romero - Research Contributor</p>
+        <p class="mt-3 mb-0">&copy; 2025 Tan Music Musical Instruments Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
